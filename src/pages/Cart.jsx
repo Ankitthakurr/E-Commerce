@@ -18,7 +18,7 @@ const {items,totalPrice} = useContext(ProductContext);
           <h1>
             Total Amount : <br />
             <br />
-            $ {totalPrice.toFixed(2)}
+            $ {items.length === 0 ? "00" : totalPrice.toFixed(2)}
           </h1>
           <button className="pay-btn">Pay Now</button>
         </div>

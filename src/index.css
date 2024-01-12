@@ -211,7 +211,7 @@ button:hover {
 }
 
 .cart-item {
-  height: 250px;
+  min-height: 250px;
   padding: 50px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
