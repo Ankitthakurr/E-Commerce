@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import ProductContainer from "../components/ProductContainer";
 
 const Home = () => {
+  const scroll = () => {
+    scrollTo({ top: 600, behavior: "smooth" });
+  };
   return (
     <>
       <svg
@@ -22,7 +25,9 @@ const Home = () => {
           <span>
             <h1>Online Shopping</h1>
             <h3>Shop Anything At Your Home Online</h3>
-            <button className="shop-btn">Shop Now</button>
+            <button className="shop-btn" onClick={scroll}>
+              Shop Now
+            </button>
           </span>
         </div>
       </div>
